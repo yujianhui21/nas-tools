@@ -87,8 +87,6 @@ ruamel.yaml==0.17.21
 ruamel.yaml.clib==0.2.7
 selenium==4.4.3
 six==1.16.0
-slack_bolt==1.18.1
-slack-sdk==3.26.1
 sniffio==1.2.0
 sortedcontainers==2.4.0
 soupsieve==2.3.2.post1
@@ -113,4 +111,9 @@ websockets==10.3
 Werkzeug==2.2.3
 wsproto==1.2.0
 zhconv==1.4.3
-anitopy==2.1.1
+qbittorrent-api==2023.11.57
+plexapi~=4.14.0
+transmission-rpc~=4.3.0
+anitopy~=2.1.1
+slack_bolt~=1.18.0
+slack_sdk~=3.21.3
