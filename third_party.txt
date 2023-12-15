@@ -4,11 +4,3 @@ anitopy
 plexapi
 transmission-rpc
 slack_bolt
-
-
-qbittorrent-api==2023.5.48
-plexapi~=4.14.0
-transmission-rpc~=4.3.0
-anitopy~=2.1.1
-slack_bolt~=1.18.0
-slack_sdk~=3.21.3
