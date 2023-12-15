@@ -111,6 +111,7 @@ websockets==10.3
 Werkzeug==2.2.3
 wsproto==1.2.0
 zhconv==1.4.3
+feapder==1.8.9
 qbittorrent-api==2023.11.57
 plexapi~=4.14.0
 transmission-rpc~=4.3.0
