@@ -98,6 +98,13 @@ function navmenu(page, newflag = false) {
   });
 }
 
+// 清除搜索
+function cache_clear(){
+  ajax_post("cache_clearly", {}, function (ret) {
+            show_success_modal("清除成功")
+          })
+}
+
 // 搜索
 function media_search(tmdbid, title, type) {
   const param = {"tmdbid": tmdbid, "search_word": title, "media_type": type};

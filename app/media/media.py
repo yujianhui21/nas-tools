@@ -2352,3 +2352,8 @@ class Media:
             result.append({"制作公司": production_company})
 
         return result
+
+    def cache_clear(self):
+        log.info("【Meta】清除tmdb缓存" )
+        self.tmdb.cache_clear()
+        return True

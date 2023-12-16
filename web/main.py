@@ -286,6 +286,18 @@ def index():
                            Latests=Latests
                            )
 
+# 资源搜索页面
+@App.route('/cache_clearly', methods=['POST', 'GET'])
+@login_required
+def cache_clearly():
+    Count = 1
+    SearchResults = "清理成功"
+    return render_template("search.html",
+                           Count=Count,
+                           Results=SearchResults,
+                           )
+
+
 
 # 资源搜索页面
 @App.route('/search', methods=['POST', 'GET'])

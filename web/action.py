@@ -57,6 +57,7 @@ class WebAction:
     def __init__(self):
         # WEB请求响应
         self._actions = {
+            "cache_clearly": self.cache_clearly,
             "sch": self.__sch,
             "search": self.__search,
             "download": self.__download,
@@ -500,6 +501,14 @@ class WebAction:
                     cfg[keys[0]] = {}
                     cfg[keys[0]][keys[1]] = cfg_value.replace("\\", "/")
         return cfg
+
+    @staticmethod
+    def cache_clearly():
+        """
+        清除搜索缓存
+        """
+        msg = Media().cache_clear()
+        return {"retmsg": msg}
 
     @staticmethod
     def __sch(data):
